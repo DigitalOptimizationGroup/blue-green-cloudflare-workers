@@ -1,0 +1,6 @@
+module "green_worker" {
+  source = "../../../terraform_modules/cloudflare_worker"
+
+  zone_domain = "${data.terraform_remote_state.base.green_domain}"
+  content     = "${file("../../../dist/worker.js")}"
+}

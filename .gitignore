@@ -1,0 +1,9 @@
+.env
+.env.fromterraform
+node_modules
+.terraform
+dist
+
+# remove these if you want to save your terraform state to github
+terraform.tfstate
+terraform.tfstate.backup

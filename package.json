@@ -1,0 +1,33 @@
+{
+  "name": "blue-green-cloudflare-workers",
+  "version": "0.0.1",
+  "description": "Cloudflare Blue/Green deployment example",
+  "main": "worker/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-worker": "webpack --config ./worker/webpack.config.js",
+    "build-proxy": "webpack --config ./worker-proxy/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DigitalOptimizationGroup/blue-green-cloudflare-workers.git"
+  },
+  "author": "Digital Optimization Group LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DigitalOptimizationGroup/blue-green-cloudflare-workers/issues"
+  },
+  "homepage": "https://github.com/DigitalOptimizationGroup/blue-green-cloudflare-workers#readme",
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "cloudflare-edge-proxy": "^1.0.0-alpha.1",
+    "dotenv-webpack": "^1.7.0",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.2.3"
+  }
+}
