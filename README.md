@@ -36,7 +36,7 @@ You will need three domains to run this setup. The free plan on Cloudflare does 
 # Domains - replace with your domains
 PROXY_DOMAIN=edge-stack.org
 BLUE_DOMAIN=blue-edge-stack.org
-GREE_DOMAIN=green-edge-stack.org
+GREEN_DOMAIN=green-edge-stack.org
 DEFAULT_ORIGIN=
 
 # Cloudflare Keys
